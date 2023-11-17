@@ -27,6 +27,9 @@ public class DAO<E> {
         em.getTransaction().begin();
         return this;
     }
+    public E obterPorID(Object id){
+        return em.find(classe,id);
+    }
     public DAO<E>fecharTransacao(){
         em.getTransaction().commit();
         return this;

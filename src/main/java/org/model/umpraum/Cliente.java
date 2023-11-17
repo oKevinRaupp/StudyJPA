@@ -14,6 +14,7 @@ public class Cliente {
     private Assento assento;
     public Cliente() {}
 
+
     public Cliente(String nome, Assento assento) {
         this.nome = nome;
         this.assento = assento;
