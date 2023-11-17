@@ -8,6 +8,8 @@
 
         <class>org.model.basico.Usuario</class>
         <class>org.model.basico.Produto</class>
+        <class>org.model.umpraum.Assento</class>
+        <class>org.model.umpraum.Cliente</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"

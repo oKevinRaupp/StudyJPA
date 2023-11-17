@@ -14,7 +14,6 @@ public class DAO<E> {
         try{
             emf = Persistence.createEntityManagerFactory("StudyJPA");
         }catch (Exception e){
-
         }
     }
     public DAO(){
