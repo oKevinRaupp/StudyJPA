@@ -16,5 +16,6 @@ public class ObterProdutos {
         double precoTotal = produtos.stream().map(Produto::getPreco).reduce(0.0,(t,p) -> t + p).doubleValue();
         System.out.println(precoTotal);
         produtoDAO.fechar();
+
     }
 }
