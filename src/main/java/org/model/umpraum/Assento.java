@@ -9,7 +9,7 @@ public class Assento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    @OneToOne(mappedBy = "assento")
+    @OneToOne(mappedBy = "assento",fetch = FetchType.EAGER)
     private Cliente cliente;
     public Assento() {}
 

@@ -12,7 +12,7 @@ public class Pedido {
     private Long Id;
     @Column(nullable = false)
     private Date data;
-    @OneToMany(mappedBy = "pedido")
+    @OneToMany(mappedBy = "pedido",fetch = FetchType.LAZY)
     private List<ItemPedido> itens;
 
     public Pedido(){
