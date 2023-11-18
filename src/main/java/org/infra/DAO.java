@@ -56,6 +56,11 @@ public class DAO<E> {
         return query.getResultList();
     }
 
+    public E consultarUm(String nomeConsulta, Object... params){
+        List<E> list = consultar(nomeConsulta,params);
+        return list.isEmpty() ? null : list.get(0);
+    }
+
     public List<E> obterTodos(int qtde,int deslocamento){
         if(classe == null){
             throw new UnsupportedOperationException("Classe nula.");

@@ -1,6 +1,7 @@
 package org.teste.consulta;
 
 import org.infra.DAO;
+import org.model.muitospramuitos.Ator;
 import org.model.muitospramuitos.Filme;
 
 import java.util.List;
@@ -12,6 +13,9 @@ public class ObterFilmes {
 
         for(Filme filme: filmes){
             System.out.println(filme.getNome());
+            for (Ator ator: filme.getAtores()){
+                System.out.println(ator.getNome());
+            }
         }
 
     }
