@@ -18,6 +18,9 @@
         <class>org.model.muitospramuitos.Tio</class>
         <class>org.model.muitospramuitos.Filme</class>
         <class>org.model.muitospramuitos.Ator</class>
+        <class>org.model.composicao.Endereco</class>
+        <class>org.model.composicao.Fornecedor</class>
+        <class>org.model.composicao.Funcionario</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
