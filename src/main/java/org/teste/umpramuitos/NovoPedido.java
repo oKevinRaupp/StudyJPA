@@ -10,8 +10,8 @@ public class NovoPedido {
         DAO<Object> dao = new DAO<>();
 
         Pedido pedido = new Pedido();
-        Produto produto = new Produto("Notebook Gamer",4600D);
-        ItemPedido item = new ItemPedido(pedido,produto,10);
+        Produto produto = new Produto("Iphone 15",4900D);
+        ItemPedido item = new ItemPedido(pedido,produto,100);
 
         dao.abrirTransacao().incluirTransacao(produto).incluirTransacao(pedido)
                 .incluirTransacao(item).fecharTransacao().fechar();
