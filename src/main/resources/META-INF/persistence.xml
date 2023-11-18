@@ -21,6 +21,8 @@
         <class>org.model.composicao.Endereco</class>
         <class>org.model.composicao.Fornecedor</class>
         <class>org.model.composicao.Funcionario</class>
+        <class>org.model.heranca.Aluno</class>
+        <class>org.model.heranca.AlunoBolsista</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
