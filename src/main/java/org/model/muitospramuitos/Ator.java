@@ -12,7 +12,7 @@ public class Ator {
     private Long Id;
 
     private String nome;
-
+    @ManyToMany(mappedBy = "atores")
     private List<Filme> filmes = new ArrayList<>();
 
     public Ator() {
