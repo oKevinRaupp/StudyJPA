@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
+import java.lang.reflect.Type;
 import java.util.List;
 
 public class DAO<E> {
@@ -44,6 +45,17 @@ public class DAO<E> {
     public List<E> obterTodos(){
         return this.obterTodos(10,0);
     }
+
+    public List<E> consultar(String nomeConsulta, Object... params){
+        TypedQuery<E> query = em.createNamedQuery(nomeConsulta,classe);
+
+        for (int i = 0; i < params.length; i+=2) {
+            query.setParameter(params[i].toString(),params[i + 1]);
+        }
+
+        return query.getResultList();
+    }
+
     public List<E> obterTodos(int qtde,int deslocamento){
         if(classe == null){
             throw new UnsupportedOperationException("Classe nula.");
