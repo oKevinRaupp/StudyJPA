@@ -1,3 +1,3 @@
 # StudyJPA
 
-Study JPA with MySQL.
+Estudando JPA com MySQL.
